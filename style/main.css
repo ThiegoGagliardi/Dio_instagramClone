@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    background-color:  rgb(243,243,243);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.principal{
+  display: flex; 
+  align-items: center; 
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.CelularExecInstagram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;}
+
+.CelularExecInstagram img{
+    height: 50rem;
+}
+
+.instagramAcesso{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;}
+
+.login{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  min-height: 19rem;
+}
+
+.criarConta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;   
+}
+
+.baixeApp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0; 
+}
+
+.logo{
+    height: 3rem;        
+}
+
+.fotoPerfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.fotoPerfil img{
+  height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.notaccount{
+    color: rgb(160,160,160);    
+}
+
+.link-blue{
+    color: #0095f6;   
+}
+
+.download{
+
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;    
+    padding: 1rem;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('../img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('../img/googleplay-button.png');
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .principal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .principal {
+        width: 90%;
+    }
+
+    .CelularExecInstagram {
+        display: none;
+    }
+
+    .instagramAcesso {
+        width: 100%;
+    }
+    
+    .criarConta{
+        border: 1px solid transparent;        
+    }
+
+    .baixeApp {
+        border: 1px solid transparent;
+    }
+
+    .download {
+        border: 1px solid transparent;
+    } 
+    
+    .login{
+        border: 1px solid transparent;
+    }   
+}
+
+
+
+
